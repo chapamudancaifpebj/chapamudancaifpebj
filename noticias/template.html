@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template das notícias</title>
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="noticia.css">
+  <link rel="stylesheet" media="screen and (max-width: 991px)" href="css/celular.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <link rel="icon" href="../imagens/coracao.png">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/redes-laterais.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="fundo">  
+	  <nav class="navbar navbar-fixed-top navbar-default navbar-transparent" style="display: inline;">
+
+
+	    <!--LOGOTIPO E MENu-->
+	    <div class="container">
+
+	      <div class="navbar-header">
+
+	        <a href="../index.html" class="navbar-brand">
+	               <span class="img-logo">Mudança</span>
+	        </a>
+	      </div>
+
+
+	    </div> <!--/container-->
+
+	  </nav>
+
+
+	  <div class="hidden-xs hidden-sm menu-redes-sociais">
+	    <div>
+	      <a href="#">
+	        <div class="rede-social-individual">
+	          <table>
+	            <tr>
+	              <td class="nome-rede-social">Facebook</td>
+	              <td class="imagem-rede-social"  rowspan=2><img src="../imagens/facebook.png"></td>
+	            </tr>
+	            <tr>
+	              <td class="endereco-rede-social">mudança750</td>
+	            </tr>
+	          </table>
+	        </div>
+	      </a>
+
+	      <a href="#">
+	        <div class="rede-social-individual">
+	          <table>
+	            <tr>
+	              <td class="nome-rede-social">Twitter</td>
+	              <td class="imagem-rede-social" rowspan=2><img src="../imagens/twitter.png"></td>
+	            </tr>
+
+	            <tr>
+	              <td class="endereco-rede-social">mudança750</td>
+	            </tr>
+	          </table>
+	        </div>
+	      </a>
+
+	      <a href="#">
+	        <div class="rede-social-individual">
+	          <table>
+	            <tr>
+	              <td class="nome-rede-social">Google+</td>
+	              <td class="imagem-rede-social"  rowspan=2><img src="../imagens/google+.png"></td>
+	            </tr>
+	            <tr>
+	              <td class="endereco-rede-social">mudança750</td>
+	            </tr>
+	          </table>
+	        </div>
+	      </a>
+
+	      <a href="#">
+	        <div class="rede-social-individual">
+	          <table>
+	            <tr>
+	              <td class="nome-rede-social">Youtube</td>
+	              <td class="imagem-rede-social"  rowspan=2><img src="../imagens/youtube.png"></td>
+	            </tr>
+	            <tr>
+	              <td class="endereco-rede-social">mudança750</td>
+	            </tr>
+	          </table>
+	        </div>
+	      </a>
+
+	      <a href="#">
+	        <div class="rede-social-individual">
+	          <table>
+	            <tr>
+	              <td class="nome-rede-social">Instagram</td>
+	              <td class="imagem-rede-social"  rowspan=2><img src="../imagens/instagram.png"></td>
+	            </tr>
+	            <tr>
+	              <td class="endereco-rede-social">mudança750</td>
+	            </tr>
+	          </table>
+	        </div>
+	      </a>
+
+	      <a href="#" data-toggle="modal" data-target="#contato">
+	        <div class="rede-social-individual">
+	          <table>
+	            <tr>
+	              <td class="nome-rede-social">Whatsapp</td>
+	              <td class="imagem-rede-social"  rowspan=2><img src="../imagens/whatsapp.png"></td>
+	            </tr>
+	            <tr>
+	              <td class="endereco-rede-social">(81) 99156-5667</td>
+	            </tr>
+	          </table>
+	        </div>
+	      </a>
+	    </div>
+	  </div>
+
+	  <div class="modal fade" id="contato">
+			<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+
+							<div class="modal-header" style="background-color:#FFCF4B">
+									<button type="button" class="close" data-dismiss="modal">
+											<span>&times;</span>
+									</button>
+									<h4 class="modal-title">
+											<span class="glyphicon glyphicon-phone"></span> Contato via WhatsApp
+									</h4>
+							</div>
+
+							<div class="modal-body">
+									<h5 style="text-align:center">Entre em contato através do <b>número</b>:<br><i>(81) 99156-5667</i></h5>
+							</div>
+
+							<div class="modal-footer">
+									<h5>
+										<i>
+											Segunda a sábado: 08h00 - 20h00 
+											<span class="glyphicon glyphicon-pushpin"></span>				
+										</i>
+									</h5>
+							</div>
+
+					</div>
+			</div>
+	</div>
+
+	  <br>
+	  <section class="corpo-noticia-template">
+	  	<div class="container">
+	  		<div class="col-xs-12">
+	  			<h2 class="titulo-noticias-template">Título da notícia</h2>
+	  			<h4 class="olho-noticia"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Olho da notícia</h4>
+	  		</div>
+	  		<div class="col-md-6 div-imagem-noticia">
+	  			<img class="imagem-noticia" src="https://pbs.twimg.com/profile_images/757974066011770880/ae2Eop2g.jpg">
+	  		</div>
+
+	  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus mauris id mattis pellentesque. Mauris lacinia blandit ligula ac dignissim. Vestibulum in gravida justo. Proin nibh leo, ullamcorper ultricies ex et, imperdiet aliquet sapien. Proin sed lectus metus. Integer suscipit orci in orci tincidunt, et auctor turpis tristique. Vivamus lacinia sapien ligula, sit amet ullamcorper odio maximus quis. Sed non metus ac lectus porta volutpat a vitae risus. Donec vel arcu id purus varius euismod. Praesent semper elementum purus at vehicula. Praesent at lacus at lacus vehicula aliquet eget eget sapien. Suspendisse eget pretium enim.
+	  		<br><br>
+			Fusce dictum finibus luctus. In maximus tristique nunc, non fringilla lacus varius ut. Integer egestas dolor magna. Maecenas lacus augue, maximus et metus a, gravida pellentesque orci. Donec a tortor molestie, efficitur dui at, aliquam quam. Pellentesque elit nunc, efficitur eget sapien vel, condimentum porttitor felis. Donec pharetra cursus turpis, nec viverra lacus.
+			<br><br>
+			Sed fringilla, lacus sed auctor blandit, mauris purus rutrum ante, eu tempus enim turpis ac mauris. Nam leo libero, porttitor at pellentesque id, semper a turpis. Mauris pharetra, massa non mattis maximus, est arcu vulputate ipsum, a hendrerit nibh tellus et elit. Curabitur et erat pulvinar, vulputate dui at, elementum arcu. Vivamus mollis leo eget lectus facilisis commodo. Mauris mi ligula, cursus nec quam sit amet, dignissim interdum risus. Suspendisse mollis sem at orci luctus interdum. Pellentesque efficitur eget neque sit amet pharetra. Quisque sed ullamcorper elit. Aenean facilisis sagittis scelerisque. Etiam ac lacus vel massa vehicula finibus.
+			<br><br>
+			Etiam id purus ultrices diam rutrum tempor. Etiam sollicitudin, nibh non pellentesque imperdiet, velit elit sollicitudin ex, vel auctor elit ante vitae sapien. Proin vestibulum elit ac lacus euismod fermentum. Vivamus scelerisque pharetra elit sed viverra. Proin rutrum at urna vel accumsan. Sed quis nunc at ex auctor interdum vel non velit. Vestibulum ut varius turpis, at hendrerit magna. Proin in arcu nulla. Donec vel auctor lectus. Suspendisse et accumsan libero, ac cursus tortor. Praesent vehicula ipsum sollicitudin, vulputate ante eget, sollicitudin orci. Nam congue semper purus sodales vehicula. Sed quis tellus lorem. Proin consequat fringilla ligula, quis iaculis quam.
+
+			<br>
+			<hr>
+			<h6 class="rodape-noticia">
+				Publicado em: 00/00/2000 00h00<br>
+				Última Modificação: 00/00/2000 00h00
+			</h6>
+	  	</div>
+	  </section>
+    
+
+      
+    </div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  </body>
+</html>

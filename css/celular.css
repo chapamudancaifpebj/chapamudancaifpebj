@@ -1,0 +1,106 @@
+#redes-sociais-mobile{
+	background: url(../imagens/escola.png),
+	linear-gradient(-90deg,#fcf8b6,#f7ed3b,#938c06);
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+/*--- Section das redes sociais ---*/
+.cel-container-rs{
+
+}
+
+.cel-menu-rs{
+	width:100%;
+	padding:0px 0px 20px 0px;
+}
+.cel-menu-rs a:hover{
+	text-decoration: none;
+}
+
+
+.cel-titulo-rs{
+	text-align: center;
+	padding-bottom:40px;
+}
+.cel-titulo-rs>h2{
+	font-weight: bold;
+	text-shadow: 10px 0px 30px #805500;
+	color:#fffbcc;
+}
+
+.cel-celula-rs{
+	width:90%;
+	height:120px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.cel-celula-rs>table{
+	width:100%;
+	height:100%;
+}
+/*repartição da célula*/
+.cel-superior-rs{
+	width:100%;
+	height:20%;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	background-color:rgba(0,0,0,0.5);
+	vertical-align: middle;
+	text-align: center;
+	color:white;
+
+	font-size:0.9em;
+}
+.cel-medio-rs{
+	width:100%;
+	height:65%;
+	vertical-align: middle;
+	text-align: center;
+}
+.cel-medio-rs>img{
+	width:50px;
+	height:50px;
+}
+.cel-inferior-rs{
+	width:100%;
+	height:15%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius:5px;
+	background-color:rgba(0,0,0,0.5);
+	vertical-align: middle;
+	text-align: center;
+	font-style: italic;
+	color:#dbd7d6;
+	font-size:0.7em;
+}
+/*--- Section das redes sociais ---*/
+.botao-imagens-celular{
+	padding-top:5px;
+}
+.botao-imagens-celular>button{
+	border:none;
+	padding:5px 10px;
+	border-radius:5px;
+	color:#666666;
+}
+
+#botao-celular-esquerda{
+	float:right;
+}
+#botao-celular-direita{
+	float:left;
+}
+
+
+/*--- Setas do menu de imagens no celular ---*/
+
+@media screen and (min-width: 480px) and (max-width:991px){
+	.cel-celula-rs{
+		width:65%;
+	}
+}
+
+
+

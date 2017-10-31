@@ -1,0 +1,1794 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Mudança</title>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" media="screen and (max-width: 991px)" href="css/celular.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!--Carousel-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+
+	<link rel="icon" href="imagens/coracao.png">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script  src="js/menuAtivo.js"></script>
+	<script  src="js/animacaoImagens.js"></script>
+	<script type="text/javascript" src="js/redes-laterais.js"></script>
+	<script  type="text/javascript">
+		window.onload = function() {
+			$('.tela-loading').fadeOut(500);
+			$('.navbar-transparent').fadeIn(500);
+		}
+	</script>
+	<!-- Rolagem -->
+	<script>
+		$(document).ready(function () {
+			function filterPath(string) {
+					return string
+							.replace(/^\//, '')
+							.replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+							.replace(/\/$/, '');
+			}
+			$('a[href*=#]').each(function () {
+				if (filterPath(location.pathname) == filterPath(this.pathname)
+									&& location.hostname == this.hostname
+									&& this.hash.replace(/#/, '')) {
+							var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+							var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+							if ($target) {
+									var targetOffset = $target.offset().top;
+									$(this).click(function () {
+									 if($(window).width() > 760){
+											$('html, body').animate({scrollTop: targetOffset}, 400);
+											return false;
+									 }
+								});
+							}
+					}
+			});
+		});
+	</script>
+	<!-- Rolagem -->
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body >
+
+	<div class="tela-loading">
+		<table style="width:100%;height:100%">
+			<tr>
+				<td style="width:100%;height:100%; vertical-align: middle;text-align:center">
+					<img src="loader.gif">
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<div class="hidden-xs hidden-sm menu-redes-sociais">
+		<div>
+		<a href="#">
+			<div class="rede-social-individual">
+				<table>
+					<tr>
+						<td class="nome-rede-social">Facebook</td>
+						<td class="imagem-rede-social"  rowspan=2><img src="imagens/facebook.png"></td>
+					</tr>
+					<tr>
+						<td class="endereco-rede-social">mudança750</td>
+					</tr>
+				</table>
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="rede-social-individual">
+				<table>
+					<tr>
+						<td class="nome-rede-social">Twitter</td>
+						<td class="imagem-rede-social" rowspan=2><img src="imagens/twitter.png"></td>
+					</tr>
+
+					<tr>
+						<td class="endereco-rede-social">mudança750</td>
+					</tr>
+				</table>
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="rede-social-individual">
+				<table>
+					<tr>
+						<td class="nome-rede-social">Google+</td>
+						<td class="imagem-rede-social"  rowspan=2><img src="imagens/google+.png"></td>
+					</tr>
+					<tr>
+						<td class="endereco-rede-social">mudança750</td>
+					</tr>
+				</table>
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="rede-social-individual">
+				<table>
+					<tr>
+						<td class="nome-rede-social">Youtube</td>
+						<td class="imagem-rede-social"  rowspan=2><img src="imagens/youtube.png"></td>
+					</tr>
+					<tr>
+						<td class="endereco-rede-social">mudança750</td>
+					</tr>
+				</table>
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="rede-social-individual">
+				<table>
+					<tr>
+						<td class="nome-rede-social">Instagram</td>
+						<td class="imagem-rede-social"  rowspan=2><img src="imagens/instagram.png"></td>
+					</tr>
+					<tr>
+						<td class="endereco-rede-social">mudança750</td>
+					</tr>
+				</table>
+			</div>
+		</a>
+
+		<a href="#" data-toggle="modal" data-target="#contato">
+			<div class="rede-social-individual">
+				<table>
+					<tr>
+						<td class="nome-rede-social">Whatsapp</td>
+						<td class="imagem-rede-social"  rowspan=2><img src="imagens/whatsapp.png"></td>
+					</tr>
+					<tr>
+						<td class="endereco-rede-social">(81) 99156-5667</td>
+					</tr>
+				</table>
+			</div>
+		</a>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-fixed-top navbar-default navbar-transparent">
+
+
+		<!--LOGOTIPO E MENu-->
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+	                 	data-toggle="collapse" data-target="#barra-menu">
+		            <span class="sr-only">alternar navegação</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+
+				<a href="#capa" class="navbar-brand">
+		           <span class="img-logo">Mudança</span>
+		        </a>
+			</div>
+
+
+			<div id="barra-menu" class="collapse navbar-collapse" >
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#capa">Início</a></li>
+					<li><a href="#noticias">Notícias</a></li>
+					<li><a href="#texto-explicativo">Objetivos</a></li>
+					<li><a href="#equipe">A equipe</a></li>
+					<li><a href="#propostas">Propostas</a></li>
+					<li class="visible-xs visible-sm"><a href="#redes-sociais-mobile">Contato</a></li>
+				</ul>
+			</div>
+
+
+		</div> <!--/container-->
+
+	</nav>
+
+	<section id="capa"> <!--capa-->
+		<div class="nova-capa">
+			<div class="imagem-capa">
+				<img src="imagens/rodape1.png">
+			</div>
+			<div class="botao-capa">
+				<a href="#texto-explicativo">
+					<div class="btn">CONHEÇA-NOS!</div>
+				</a>
+			</div>
+		</div>
+	</section> <!--capa-->
+
+<!--class="visible-md visible-lg" data-scroll-reveal="wait 0.2s, then enter left and move 40px over 0.8s"-->
+
+
+	<section id="noticias">
+		<div class="container">
+			<div class="row">
+				<h1 class="titulo-geral">Notícias</h1>
+				<hr class="detalhe-titulo">
+			</div>
+		</div>
+
+		<div class="setas hidden-xs hidden-sm">
+			<button id="seta-esquerda"><span class="glyphicon glyphicon-menu-left"></span></button>
+			<button id="seta-direita"><span class="glyphicon glyphicon-menu-right"></span></button>
+		</div>
+
+		<div class=" thumbnails owl-carousel owl-theme">
+			<div class="item passador-imagens">
+				<div class="item-inner">
+					<a href="#">
+						<img src="imagens/quadro-noticias/noticia1.jpg">
+					</a>
+				</div>
+			</div>
+
+			<div class="item passador-imagens">
+				<div class="item-inner">
+					<a href="#">
+						<img src="imagens/quadro-noticias/noticia1.jpg">
+					</a>
+				</div>
+			</div>
+
+			<div class="item passador-imagens">
+				<div class="item-inner">
+					<a href="#">
+						<img src="imagens/quadro-noticias/noticia1.jpg">
+					</a>
+				</div>
+			</div>
+
+			<div class="item passador-imagens">
+				<div class="item-inner">
+					<a href="#">
+						<img src="imagens/quadro-noticias/noticia1.jpg">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row veja-mais">
+				<a href="todasasnoticias.html">
+					Veja mais&nbsp;<span class="glyphicon glyphicon-share-alt"></span>
+				</a>
+			</div>
+		</div>
+
+		<div class="container visible-xs visible-sm">
+			<div class="col-xs-6 botao-imagens-celular">
+				<button id="botao-celular-esquerda">Anterior</button>
+			</div>
+			<div class="col-xs-6 botao-imagens-celular">
+				<button id="botao-celular-direita">Próximo</button>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="texto-explicativo" >
+		<div class="container" >
+			<div class="row">
+				<h2 class="titulo-geral">Objetivos</h2>
+				<hr class="detalhe-titulo">
+			</div> <!--/row-->
+
+			<div class="row">
+				<div class="col-md-6 imagem-texto-explicativo hidden-xs hidden-sm" data-scroll-reveal="wait 0.2s, then enter left and move 40px over 0.8s">
+						<img src="imagens/coracao.png">
+				</div>
+
+				<div class="col-md-6 imagem-texto-explicativo visible-sm visible-xs">
+						<img src="imagens/coracao.png">
+				</div>
+
+
+				<div class="col-md-6 corpo-texto-explicativo hidden-xs hidden-sm" data-scroll-reveal="wait 0.2s, then enter right and move 40px over 0.8s">
+					<h3 class="titulo-objetivos">Sobre a chapa</h3>
+					<p>
+						A <b style="color:#990000">chapa Mudança</b> é uma equipe formada para concorrer ao Grêmio Estudantil Geraldo Viera da Costa do Instituto Federal de Pernambuco – <i>Campus Belo Jardim</i> no biênio 2017-2018. <!--Nós temos como foco as mudanças no desenvolvimento de soluções e propor melhorias durante a gestão.-->
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">A diretoria</h3>
+					<p>
+						A diretoria é formada por alunos capacitados e compromissados em trazer soluções afirmativas para o corpo discente. Queremos desenvolver a comunidade acadêmica com base nos nossos esforços e no diálogo.
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">Por que um site?</h3>
+					<p>
+						Estamos fornecendo esse site para mostrar nossas propostas e ideais de um projeto de mudança e sucesso.
+					</p>
+				</div>
+
+				<div class="col-md-6 corpo-texto-explicativo visible-sm visible-xs">
+					<h3 class="titulo-objetivos">Sobre a chapa</h3>
+					<p>
+						A <b style="color:#990000">chapa Mudança</b> é uma equipe formada para concorrer ao Grêmio Estudantil Geraldo Viera da Costa do Instituto Federal de Pernambuco – <i>Campus Belo Jardim</i> no biênio 2017-2018. <!--Nós temos como foco as mudanças no desenvolvimento de soluções e propor melhorias durante a gestão.-->
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">A diretoria</h3>
+					<p>
+						A diretoria é formada por alunos capacitados e compromissados em trazer soluções afirmativas para o corpo discente. Queremos desenvolver a comunidade acadêmica com base nos nossos esforços e no diálogo.
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">Por que um site?</h3>
+					<p>
+						Estamos fornecendo esse site para mostrar nossas propostas e ideais de um projeto de mudança e sucesso.
+					</p>
+				</div>
+			</div><!--/row-->
+
+
+		</div>
+	</section>
+
+
+	<div class="modal fade" id="contato">
+			<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+
+							<div class="modal-header" style="background-color:#FFCF4B">
+									<button type="button" class="close" data-dismiss="modal">
+											<span>&times;</span>
+									</button>
+									<h4 class="modal-title">
+											<span class="glyphicon glyphicon-phone"></span> Contato via WhatsApp
+									</h4>
+							</div>
+
+							<div class="modal-body">
+									<h5 style="text-align:center">Entre em contato através do <b>número</b>:<br><i>(81) 99156-5667</i></h5>
+							</div>
+
+							<div class="modal-footer">
+									<h5>
+										<i>
+											Segunda a sábado: 08h00 - 20h00 
+											<span class="glyphicon glyphicon-pushpin"></span>				
+										</i>
+									</h5>
+							</div>
+
+					</div>
+			</div>
+	</div>
+
+	<section class="fundo-pessoas" id="equipe">
+		<div class="container" >
+			<div class="row">
+				<h2 class="titulo-geral">Nosso Trabalho</h2>
+				<hr class="detalhe-titulo">
+			</div> <!--/row-->
+
+			<div class="row">
+				<div class="col-md-6 imagem-texto-explicativo hidden-xs hidden-sm" data-scroll-reveal="wait 0.2s, then enter left and move 40px over 0.8s">
+					<img src="imagens/equipe.png" class="imagem-equipe">
+				</div>
+
+				<div class="col-md-6 imagem-texto-explicativo visible-sm visible-xs">
+					<img src="imagens/equipe.png" class="imagem-equipe">
+				</div>
+
+
+				<div class="col-md-6 corpo-texto-explicativo hidden-xs hidden-sm" data-scroll-reveal="wait 0.2s, then enter right and move 40px over 0.8s">
+					<h3 class="titulo-objetivos">Trabalho em equipe</h3>
+					<p>
+						O trabalho em equipe é fundamental para se obter o sucesso. Dessa forma, nosso objetivo é, através do diálogo e do trabalho em equipe, lutar pelos interesses de cada estudante.
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">Como trabalharemos</h3>
+					<p>
+						Trabalharemos de forma comprometida, assumindo falhas e trabalhos de sucesso. Temos como objetivo lutar por objetivo em comum de todos os estudantes: internos, semi-internos e externos.
+
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">Fazemos um convite</h3>
+					<p>
+						Convidamos você para conhecer a <b style="color:#990000">Chapa Mudança</b> que está lutando para estar na gestão do Grêmio Estudantil Geraldo Viera da Costa no biênio 2017/2018 trabalhando por você.
+					</p>
+				</div>
+
+				<div class="col-md-6 corpo-texto-explicativo visible-xs visible-sm">
+					<h3 class="titulo-objetivos">Trabalho em equipe</h3>
+					<p>
+						O trabalho em equipe é fundamental para se obter o sucesso. Dessa forma, nosso objetivo é, através do diálogo e do trabalho em equipe, lutar pelos interesses de cada estudante.
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">Como trabalharemos</h3>
+					<p>
+						Trabalharemos de forma comprometida, assumindo falhas e trabalhos de sucesso. Temos como objetivo lutar por objetivo em comum de todos os estudantes: internos, semi-internos e externos.
+
+					</p>
+
+					<br>
+
+					<h3 class="titulo-objetivos">Fazemos um convite</h3>
+					<p>
+						Convidamos você para conhecer a <b style="color:#990000">Chapa Mudança</b> que está lutando para estar na gestão do Grêmio Estudantil Geraldo Viera da Costa no biênio 2017/2018 trabalhando por você.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+		    <div class="row">
+	      		<h1 class="titulo-geral"> Nossa Equipe </h1>
+	    	</div>
+	    	<hr class="detalhe-titulo"> 
+	    	<br>
+
+		<div class="col-xs-6 col-md-4 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#presi">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Presidente</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/paulo.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Paulo Victor</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+        <!-- Modal -->
+					<div id="presi" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Paulo Victor - <b> Presidente </b> </h4>
+								</div>
+								<div class="modal-body">
+									<p style="text-align: justify">Olá, tudo bem? Meu nome é Paulo Victor, sou natural de Belo Jardim e estudo no 2° ano no Curso de Informática para Internet no modelo Integrado no IFPE - Campus Belo Jardim. Queria contar um pouco mais da minha história ou até mesmo a minha personalidade diante a essa responsabilidade que foi posta para se candidatar a Presidência no Grêmio Estutantil pela chapa Mudança. Pois bem, desde o ano passado quando ingressei no IFPE, sempre tive como obsessão ajudar aos alunos do que estavam precisando e facilitar o trabalho de quem estava achando díficil, sempre fui essa pessoa. Quando via algo de errado ocorrendo agia rapidamente para conserta logo, contudo, tendo esse pensamento, fui representante eleito no ano passado e reeleito nesse ano com números expressivos de votos e pretendo expandir essa ajuda através no Grêmio Estudantil no biênio 2017/2018 com a criação da chapa Mudança que tem como objetivo: criar coisas novas, pegar os erros do passado como exemplos para não errar futuramente e trazer para a chapa o que fui, ajudar os que mais precisavam. Coloco-me à disposição para você abraçar junto com a gente essa mudança que o instituto precisa.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+						</div>
+          			</div>
+      			
+			 <div class="col-xs-6 col-md-4 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#vice">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Vice-Presidente</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/rubem.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Rubem Neto</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div> 
+
+        <!-- Modal -->
+          <div id="vice" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Rubem Neto - <b> Vice-Presidente </b> </h4>
+                </div>
+                <div class="modal-body">
+                  <p style="text-align: justify">Sou um cara extrovertido, responsável, inteligente com vontade de crescer profissionalmente e intelectualmente. Ao participar da chapa Mudança para concorrer ao grêmio, me sinto bastante confiante e entusiasmado pois me identifico bastante com as causas estudantis, sendo eu um homem já com experiência na área, pois fui presidente do grêmio de minha antiga escola durante um ano. E trago para nossa chapa minha experiência como algo que poderá nos ajudar a conduzir melhor o grêmio para os nossos amigos estudantes.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+			 <div class="col-xs-6 col-md-4 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#secge">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Secretário Geral</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/samyra.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Samyra Nathalia</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>  
+
+        <!-- Modal -->
+          <div id="secge" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"> Samyra Nathalia - <b> Secretária Geral </b> </h4>
+                </div>
+                <div class="modal-body">
+                  <p style="text-align: justify">Olá! Me chamo Samyra Nathalia, fui convidada para participar do Grêmio Estudantil 2017-2018, com o cargo de Secretária Geral. Sou uma pessoa que não desiste nunca de meus próprios objetivos, costumo lutar até o fim pelos meus direitos (e pretendo fazer o mesmo pelos estudantes do Campus Belo Jardim), sou forte e sei me manter calma mesmo que tudo esteja desmoronando ao meu redor, procuro sempre ajudar quem precisa de ajuda, creio que está seja uma das características principais de ser integrante do Grêmio Estudantil. Meu objetivo como integrante da "Chapa da Mudança" é ser a voz de todos os estudantes desta Instituição, não vou ficar calada diante de situações de injustiça... Porque para todos os efeitos uma escola sem estudantes não é escola, portanto lutaremos sempre pelos direitos e necessidades de todos. Juntos com união e rumo a mudança.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-md-4  espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#1sec">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">1º Secretária</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/camila.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Camila Vilela</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div> 
+
+          <!-- Modal -->
+            <div id="1sec" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Camila Vilela - <b> 1º Secretária </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Meu nome é Camila Cavalcanti Vilela, tenho 15 anos, sou natural de São Bento do Una. Desde criança sempre tive a vontade de ingressar no ramo da saúde e tenho como foco Medicina. Atualmente, faço ensino médio e técnico no Instituto Federal de Pernambuco - Campus Belo Jardim. Meu cargo na chapa Mudança é 1° Secretária e tenho como objetivo ajudar a tornar o Campus um lugar de melhor convivência entre o corpo discente e docente, fazendo o possível para me tornar o "braço direito" dos estudantes.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+         <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#tes">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Tesoureiro Geral</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/pauloh.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Paulo Henrique</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="tes" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Paulo Henrique - <b> Tesoureiro Geral </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Meu nome é Paulo Henrique, sou uma pessoa que gosta de desafios e novas experiências. O motivo de estar participando da chapa Mudança é para ajudar/melhorar a nossa escola com ideias, projetos e de qualquer maneira que puder. Também estou aqui para representar a turma subsequente de informática, que por muitas vezes passa despercebida aqui no IFPE campus Belo Jardim.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+       <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#diretge">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria Social</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/katalin.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Kátalin Oliveira</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="diretge" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Kátalin Oliveira - <b> Diretoria Social </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Sou aluna do curso de informática, estudo no 2°C, sou uma pessoa que sempre estar pronta para ajudar o próximo, ajudar sempre será prioridade em minha vida. Sou uma pessoa que ama defender e ajudar quem mais precisa, defendo quem mais precisa, por isso entrei nessa luta com a chapa Mudança para que ao lado dos animais, falando por eles e lutando por eles, e nela continuarei. Meu objetivo é ajudar os animais do campus, dando condições dignas para eles, recuperando dignidade e liberdade de viver sem medo.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+       <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#dirim">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Imprensa</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/jefferson.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Jefferson</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="dirim" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Jefferson - <b> Diretoria de Imprensa </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Sou Jefferson Rodrigues, tenho 17 anos e atualmente estudo no curso de Informática para Internet  na turma do  2° ano do IFPE - Campus Belo Jardim. Meu cargo na chapa Mudança é a diretoria de imprensa e meus objetivos são, quando chegar ao cargo, levar a todos os alunos informações em primeira mão a respeito de tudo que se passa na administração do grêmio estudantil do campus.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#dircu">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Cultura</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/rafaela.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Rafaela Cruz</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="dircu" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Rafaela Cruz - <b> Diretoria de Cultura </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Meu nome é Rafaela Cruz, tenho 15 anos, sou natural de São Paulo - SP. Mas desde criança moro em Belo Jardim - PE. Quando criança sempre tive a vontade de ingressar no curso de Jornalismo, entretanto com o tempo fiquei com o foco em Medicina Veterinária. Atualmente, estou no 1° ano do Ensino Médio e Técnico no Instituto Federal de Pernambuco - Campus Belo jardim. Meu cargo na chapa Mudança é a Diretoria de cultura e tenho como objetivo desenvolver vários projetos culturais junto com os estudantes.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+         <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#direve">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Eventos</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/eduardo.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Eduardo Samuel</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="direve" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Eduardo Samuel - <b> Diretoria de Eventos </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Meu nome é Eduardo Samuel, tenho 16 anos, tenho uma personalidade forte, sou alegre, extrovertido e brincalhão, mas na hora certa sei ser responsável. Sou natural de Belo Jardim - PE, atualmente faço o 1° ano no Curso de  Agroindústria, sempre tive vontade de ingressar no ramo no Curso de Direito, quando recebi a proposta da chapa Mudança, achei uma boa oportunidade para aprofundar os meus conhecimentos, fiquei com o cargo de Diretor de Eventos junto com Elisa Carla, minhas propostas é melhorar e fazer com que todo tipo de eventos aconteça em benefício para os estudantes se torne uma coisa que traga diversão, prazer e conhecimento para os alunos(as) e a sociedade acadêmica no Campus.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#diresp">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Esportes</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/tainara.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Tainara Bezerra</td>
+					</tr>
+				</table>
+			</button>
+	   
+	    </div>  
+
+          <!-- Modal -->
+            <div id="diresp" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Tainara Bezerra - <b>  Diretoria de Esportes </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Meu nome é Tainara Bezerra, tenho 16 anos e moro em Belo Jardim. Estou cursando o Ensino Médio e Técnico em Agroindústria no Instituto Federal de Pernambuco - Campus Belo Jardim. Atualmente faço Monitoria para Educação Física, que consequentemente é uma área que me identifico bastante, por esse e outros motivos estou na chapa Mudança com o cargo de Diretoria de Esportes onde tenho o objetivo de promover eventos nessa área, tornar o Campus mais saúdavel e divertidos para todos, criando também o hábito de exercícios e lazer para o corpo discente.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#diramb">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Meio Ambiente&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/leticia.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Letícia</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+	        <!-- 
+        	-->
+
+			
+            <!-- Modal -->
+              <div id="diramb" class="modal fade" role="dialog">
+              	<div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Letícia - <b> Diretoria de Meio Ambiente </b> </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify">Meu nome é Letícia e curso o 1° ano de informática integrado ao ensino médio. O meu futuro e o do país costumam me preocupar muito. Por isso escolhi o IFPE, ciente da influência deste nome e da excelência em nos fazer crescer profissionalmente. Ingressando no instituto notei que, mesmo com a boa estrutura, melhorias poderiam ser feitas para que continuasse a evoluir. Foi então que o líder da chapa Mudança fez-me o convite e eu, lisonjeada, aceitei. Escolhi a diretoria de meio ambiente porque está diretamente ligada à educação, tal que esta é essencial à construção de uma sociedade promissora, em que a base é o respeito e a meta é o crescimento. Meu objetivo é conscientizar os alunos disso; conservar o patrimônio que nos é entregue, manter os ambientes limpos, priorizar a coleta seletiva, economizar água e energia e respeitar os animais é algo essencial ao bem-estar na instituição e ao nosso desenvolvimento enquanto corpo discente e cidadãos.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+	    <div class="col-md-4 col-xs-6 espaco-pessoa">
+			<button class="button-pessoa" data-toggle="modal" data-target="#dirpolip">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Políticas Públicas</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/mariaeu.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Maria Eugênia</td>
+					</tr>
+				</table>
+			</button>	
+	    </div>  
+
+	    <!-- Modal -->
+              <div id="dirpolip" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Maria Eugênia - <b> Diretoria de Políticas Públicas </b> </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify">Olá, sou Maria Eugênia, fui convidada para fazer parte da Chapa da Mudança como suplente de Políticas Públicas pelo presidente Paulo Victor. Aceitei o convite porque visando as políticas do Campus Belo Jardim, algumas coisas devem ser mudadas para que haja uma convivência melhor entre os alunos, professores e funcionários. Desejo com esse cargo, junto com minha parceira, melhorar as políticas públicas e causas sociais, sem deixar nenhum aluno ou funcionário de fora de qualquer assunto que envolva o campus, tratando assim - acima de tudo - todos com igualdade e respeito. Mesmo com as dificuldades que encaramos no dia a dia de nosso Campus, tentarei melhorar e lutar pelos direitos do aluno e fazendo assim, que o mesmo se torne à vontade para se dirigir à nós em qualquer dúvida ou problema.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+        <div class="col-md-4 col-xs-6 espaco-pessoa">
+			<button class="button-pessoa" data-toggle="modal" data-target="#dirsa">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Saúde</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/dairis.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Daíris Maria</td>
+					</tr>
+				</table>
+			</button>	
+	    </div>   
+          <!-- Modal -->
+            <div id="dirsa" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Daíris Maria - <b> Diretoria de Saúde </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Olá! Meu nome é Daíris Maria, sou aluna do curso técnico em Enfermagem do IFPE Campus Belo Jardim na modalidade subsequente, fui convidada para o cargo de diretora de Saúde para o Grêmio Estudantil pelo presidente Paulo Victor, aceitei o convite, e assumindo o cargo pretendo implementar e promover projetos e ações que venham a beneficiar os discentes, docentes e funcionários do campus, investindo em uma Mudança e melhoria contínua para todos. Ouvindo, respeitando e fazendo o melhor possível para atender as necessidades de todos.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+         <div class="col-md-4 col-xs-6 espaco-pessoa">
+			<button class="button-pessoa" data-toggle="modal" data-target="#orador">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Orador</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/kathlyn.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Kathlyn Melanie</td>
+					</tr>
+				</table>
+			</button>  	
+	    </div>
+
+
+
+        <div id="orador" class="modal fade" role="dialog">
+            <div class="modal-dialog"> 
+                    <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Kathlyn Melanie - <b> Orador </b> </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: justify">Meu nome é Kathlyn Melanie, estudo o Curso Técnico Agropecuária no IFPE - Campus Belo Jardim, e fui convidada para ser Oradora na Chapa Mudança. Espero ser o mais clara possível em todos os momentos, extremamente atenciosa e muito útil para todos de nossa gestão.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="col-xs-12" style="text-align:center">
+			<h2 class="titulo-pro"> Suplentes</h2>
+		</div>
+
+       <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#sdirim">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Imprensa</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/juan.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Juan Gabriel</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="sdirim" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Juan Gabriel - <b> Suplente - Diretoria de Imprensa </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Sou Juan Gabriel, tenho 17 anos e estudo no curso de Informática para Internet  na turma do  2° ano no IFPE - Campus Belo Jardim. Meu cargo na chapa Mudança é Suplente na Diretoria de Imprensa. Quero estar sempre criando e inovando as ideias que aparecerão através no desenvolvimento de Marketing promocional em relação ao Grêmio Estudantil para deixar os alunos(as) informados(as) pelo o trabalho em que nós vamos está realizando no biênio 2017/2018.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+         <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#sdircul">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Cultura</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/mariasabrina.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Maria Sabrina</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="sdircul" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Maria Sabrina - <b> Suplente - Diretoria de Cultura </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Meu nome é Maria Sabrina, tenho 16 anos, sou de Belo Jardim. Dessa forma, tive vontade de fazer algo que não só me ajuda-se e me deixa-se feliz, mas também ajudar todos que precisam de ajuda, eu sempre gostei de experimentar coisas novas, pois isso me faz ter conhecimento do que eu vou querer para o meu futuro. Estudo no Instituto Federal de Pernambuco no Campus - Belo Jardim, faço o curso técnico em Agropecuária, estou no 2° ano do ensino médio, sou representante de turma e também participo de um projeto de extensão. Meu cargo na chapa Mudança é como Suplente de Cultura e tenho como objetivo poder ajudar a todos os estudantes para conseguir fazer a mudança que tanto queremos para o nosso campus.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+         <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#sdireve">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Eventos</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/elisa.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Elisa Carla</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+            <!-- Modal -->
+              <div id="sdireve" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Elisa Carla - <b> Suplente - Diretoria de Eventos </b> </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify">Me chamo Elisa Carla, tenho 15 anos, e sou natural de Belo Jardim. Desde cedo tive mais afinidade com áreas no âmbito da saúde, em termos de conhecimento e estudo, sempre focada no meu objetivo principal: a graduação acadêmica no curso de Medicina. Hoje curso 1° ano do curso de Agroindústria no Instituto Federal de Pernambuco - Campus Belo Jardim. Minha principal função, d'entre outras é Suplente de Eventos na Chapa Mudança, sempre visando o aprimoramento da relação entre docentes e dicentes, criando uma ponte resolutória de conflitos internos entre os mesmos, com o fim de melhorar a convivência numa hierarquia saudável e igualitária.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+    <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#spolip">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Políticas Públicas</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/anne.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Anne Lyvia</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+              <!-- Modal -->
+             <div id="spolip" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Anne Lyvia - <b> Suplente - Políticas Públicas </b> </h4>
+                      </div>
+                      <div class="modal-body">
+                        <p style="text-align: justify">Meu nome é Anne Lyvia, sou natural de Pesqueira - PE. Sempre desejei ser policial, defender a sociedade sempre foi meu ideal de vida. Atualmente, faço Ensino Médio e Técnico no IFPE - Campus Belo Jardim, fui convidada pelo presidente Paulo Victor para fazer parte da chapa Mudança, como suplente da diretória de Políticas Públicas e assumindo o cargo junto com minha parceira pretendo lutar e melhorar as políticas no Campus.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+           <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#sesp">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria de Esportes</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/gcic.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Gabriel Cícero</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+              <!-- Modal -->
+             <div id="sesp" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Gabriel Cícero - <b> Suplente - Diretoria de Esportes </b> </h4>
+                      </div>
+                      <div class="modal-body">
+                        <p style="text-align: justify">Meu nome é Gabriel Cícero da Silva Viana, sou natural de inajá-PE. Desde criança sempre tive vontade de ingressar no ramo de Agropecuária e tenho como foco a faculdade de Agronomia, faço ensino médio e técnico no Instituto Federal de Pernambuco - Campus Belo Jardim. Meu cargo na chapa Mudança é suplente de Esportes e tenho como objetivo ajudar a tornar o Campus um lugar de melhor convivência entre o corpo discente e o docente fazendo o possível por todos os estudantes.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+		<div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#sdirso">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Diretoria Social</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/mariae.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Maria Eduarda</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div>   
+          <!-- Modal -->
+            <div id="sdirso" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Maria Eduarda - <b> Suplente - Diretoria Social </b> </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="text-align: justify">Meu nome é Maria Eduarda, eu tenho uma personalidade bastante forte, mas isso não faz de mim a pessoa rude que pode parecer falando assim. Me considero muito honesta em relação a tudo e qualquer circunstância em minha vida. Como também muito generosa e que as pessoas podem até se aproveitar disso. Estou na diretoria social e para eu é um privilégio ser reconhecida pelo que já fazia na Instituição. Meu objeto nesta campanha é continuar com a luta pelos menos favorecidos, que, nesse caso, são os animais que vivem no Campus em situação de abandono. Com a chapa me senti abraçada, sinto que não poderia ser melhor recebida. Como o próprio nome já diz, quero fazer a mudança junto com chapa Mudança!</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-4 col-xs-6 espaco-pessoa">
+
+			<button class="button-pessoa" data-toggle="modal" data-target="#spopu">
+				<table class="table-pessoa">
+					<tr>
+						<td class="coluna-titulo-pessoa">Políticas Públicas</td>
+					</tr>
+					<tr>
+						<td class="coluna-imagem-pessoa">
+							<img src="imagens/p/islaine.png" class="imagem-pessoa">
+						</td>
+					</tr>
+					<tr>
+						<td class="coluna-nome-pessoa">Islaine</td>
+					</tr>
+				</table>
+			</button>
+	        	
+	    </div> 
+          <div id="spopu" class="modal fade" role="dialog">
+                  <div class="modal-dialog"> 
+                    <!-- Modal content-->
+                <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Islaine - <b> Suplente - Diretoria de Saúde </b> </h4>
+                      </div>
+                      <div class="modal-body">
+                        <p style="text-align: justify">Olá, tudo bem? Meu nome é Islaine e sou de Lajedo-PE. Faço o curso técnico em Enfermagem na modalidade subsequente aqui no IFPE - Campus Belo Jardim. Fui convidada para fazer parte da Chapa da Mudança pelo presidente Paulo Victor, como suplente da Diretoria de Saúde. Tenho como objetivo buscar mais qualidade de vida para todos os discentes, docentes e funcionários do campus, enfatizar a relação entre todos e promover ações junto com a minha parceira diretora de Saúde em prol do favorecimento e continuidade da Saúde de todo o Campus.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+        
+	</div>
+		<br><br>
+	</section>
+
+
+	<!--data-scroll-reveal="wait 0.2s, then enter right and move 40px over 0.8s"-->
+	<section id="propostas">
+		<div class="container">
+			<div class="row">
+				<h2 class="titulo-geral">Propostas</h2>
+				<hr class="detalhe-titulo">
+
+
+				<div class="col-md-12">
+					<h2 class="titulo-pro"><span class="glyphicon glyphicon-ok"></span> Direção Geral </h2>
+				</div>
+			</div>
+
+			<div class="corpo-proposta" style="margin-top:0px;">
+				<h3 class="titulo-prop-corpo">Projeto <span style="color:#18cd1b">Belo Campus</span></h3>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/tree.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Conservação de jardins e árvores
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/trash.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Trocas, instalações e preservação de lixeiras no campus
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/users-group.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Multirões de limpeza
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/deficiente.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Conservação da reforma de acessibilidade
+					</div>
+				</div>
+				<div class="row">
+					<div class="hidden-xs hidden-sm col-md-2">	
+					</div>
+					<div class="col-xs-12 col-md-8 explicativo-propostas">
+						Um multirão regular e contínuo de serviços para revitalizar áreas em todas as regiões do campus. Ocorrerá no biênio 2017/2018
+					</div>
+					<div class="hidden-xs hidden-sm col-md-2">	
+					</div>
+				</div>
+				&nbsp;
+			</div>
+
+			<div class="row">
+				<hr class="dividir-propostas">
+			</div>
+			
+
+			<div class="corpo-proposta">
+				<h3 class="titulo-prop-corpo">Projeto <span style="color:#18cd1b">Geração Consciente</span></h3>
+
+				<div class="col-xs-6">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/eco.png" class="icones-propostas-2">
+					</div>
+					<div class="row itens-proposta">
+						Conscientização ambiental
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/recycle-bin.png" class="icones-propostas-2">
+					</div>
+					<div class="row itens-proposta">
+						Preservação ambiental
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="hidden-xs hidden-sm col-md-2">	
+					</div>
+					<div class="col-xs-12 col-md-8 explicativo-propostas">
+						Este projeto tem como objetivo integrar e conscientizar os alunos sobre o trabalho do projeto Belo Campus.
+					</div>
+					<div class="hidden-xs hidden-sm col-md-2">	
+					</div>
+				</div>
+				&nbsp;
+			</div>
+
+			<hr class="dividir-propostas">
+
+			<div class="corpo-proposta">
+				<h3 class="titulo-prop-corpo">IF <span style="color:#3889e0">Cine</span></h3>
+
+				<div class="col-xs-6">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/clapperboard.png" class="icones-propostas-2">
+					</div>
+					<div class="row itens-proposta">
+						Reprodução de filmes para o lazer dos alunos
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/calendar.png" class="icones-propostas-2">
+					</div>
+					<div class="row itens-proposta">
+						3 vezes na semana
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="hidden-xs hidden-sm col-md-2">	
+					</div>
+					<div class="col-xs-12 col-md-8 explicativo-propostas">
+						Este projeto tem como alvo o público geral do campus, principalmente os alunos internos. Na nossa gestão, apresentaremos filmes para amenizar a carga horária excessiva e dar pouco de lazer e diversão aos alunos.
+					</div>
+					<div class="hidden-xs hidden-sm col-md-2">	
+					</div>
+				</div>
+				&nbsp;
+			</div>
+
+			<hr class="dividir-propostas">
+
+			<div class="corpo-proposta">
+				<h3 class="titulo-prop-corpo"><span style="color:#e8e54a">#Eu</span><span style="color:#18cd1b">Sou</span><span style="color:red">Fera</h3>
+
+				<div class="col-xs-6">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/book.png" class="icones-propostas-2">
+					</div>
+					<div class="row itens-proposta">
+						Momentos de estudo
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/teaching.png" class="icones-propostas-2">
+					</div>
+					<div class="row itens-proposta">
+						Aulões em datas discutidas
+					</div>
+				</div>
+
+				<div class="hidden-xs hidden-sm col-md-2">	
+				</div>
+				<div class="col-xs-12 col-md-8 explicativo-propostas">
+					Um multirão regular e contínuo de serviços para revitalizar áreas em todas as regiões do campus. Ocorrerá no biênio 2017/2018
+				</div>
+				<div class="hidden-xs hidden-sm col-md-2">	
+				</div>
+				&nbsp;
+			</div>
+
+			
+
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="titulo-pro"><span class="glyphicon glyphicon-ok"></span> Projetos Sociais </h2>
+				</div>
+			</div>
+
+
+			<div class="corpo-proposta" style="margin-top:0px;">
+				<h3 class="titulo-prop-corpo">IF <span style="color:#9f8c42">Animal</span></h3>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/syringe.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Tratar a saúde dos animais
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/pet.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Incentivar adoção dos animais
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/note.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Fazer cadastros
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<div class="row itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/bone.png" class="icones-propostas">
+					</div>
+					<div class="row itens-proposta">
+						Ração e água em recipientes adequados
+					</div>
+				</div>
+
+				<div class="hidden-xs hidden-sm col-md-2">	
+				</div>
+				<div class="col-xs-12 col-md-8 explicativo-propostas">
+					Neste projeto tentaremos melhorar a qualidade de vida dos animais no campus.
+				</div>
+				<div class="hidden-xs hidden-sm col-md-2">	
+				</div>
+				&nbsp;
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="titulo-pro"><span class="glyphicon glyphicon-ok"></span> Projetos de Imprensa</h2>
+				</div>
+			</div>
+
+			<div class="corpo-proposta" style="margin-top:-100px;">
+
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux">Criação do  <span style="color:#3889e0">site</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/domain-registration.png" class="icones-propostas" style="margin-top:0">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Este website tem como objetivo disponibilizar informações relevantes para os alunos
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux">Aluno <span style="color:#3889e0">Conectado</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/translation.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						O objetivo é criar uma rede de comunicação (redes sociais, quadros de avisos) para deixar os estudantes informados sobre tudo
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux"><span style="color:#18cd1b">Rádio Escolar</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/radio.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Um rádio para informas os alunos no refeitória e em todo o campus.
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux"><span style="color:#18cd1b">Jornal</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/text-lines.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Jornal informativo sobre as atividades do grêmio estudantil.
+					</div>
+				</div>
+				&nbsp;
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="titulo-pro"><span class="glyphicon glyphicon-ok"></span> Eventos</h2>
+				</div>
+			</div>
+
+			<div class="corpo-proposta" style="margin-top:0px;">
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux">Eventos  <span style="color:#18cd1b">esportivos</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem" id="resolver-posicao">
+						<img src="imagens/pro/basketball.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Promover eventos como Interclasses e Intercursos
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux"><span style="color:#cc33ff">Festividades Culturais</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem" id="resolver-posicao-2">
+						<img src="imagens/pro/party.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Promover festividades culturais como Halloween, Dia do Estudante, etc. 
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux"><span style="color:#cc33ff">Festival de Talentos</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/stage.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Realizar este festival para impulsionar e apoiar atividades culturais no campus.
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux"><span style="color:#18cd1b">Palestras</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/presentation.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Promover palestras com termas diversos: drogas, sexo, bullying, etc.
+					</div>
+				</div>
+				&nbsp;
+			</div>
+
+			<div class="corpo-proposta" style="margin-top:0px; text-align:center">
+				<div class="col-sm-6 col-md-3">
+					<h3 class="titulo-prop-corpo titulo-prop-aux">Calendário  <span style="color:#18cd1b">cultural</span></h3>
+					<div class="col-xs-12 itens-proposta itens-proposta-imagem">
+						<img src="imagens/pro/calendar.png" class="icones-propostas">
+					</div>
+					<div class="col-xs-12 explicativo-propostas">
+						Formular calendário com eventos culturais interno e externos à instituição.
+					</div>
+				</div>
+				&nbsp;
+			</div>
+
+		<div class="row">
+
+	</section>
+
+	<div id="redes-sociais-mobile" class="visible-sm visible-xs cel-menu-rs"> <!--Redes sociais em celulares/tablets-->
+		<div class="container">
+			<div class="row">
+				<div class="cel-titulo-rs cel-container-rs">
+					<h2 class="titulo-geral">Contato</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<a href="#">
+						<div class="cel-celula-rs">
+							<table>
+								<tr>
+									<td class="cel-superior-rs">Facebook</td>
+								</tr>
+								<tr>
+									<td class="cel-medio-rs">
+										<img src="imagens/facebook.png">
+									</td>
+								</tr>
+								<tr>
+									<td class="cel-inferior-rs">mudança750</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-4">
+					<a href="#">
+						<div class="cel-celula-rs">
+							<table>
+								<tr>
+									<td class="cel-superior-rs">Twitter</td>
+								</tr>
+								<tr>
+									<td class="cel-medio-rs">
+										<img src="imagens/twitter.png">
+									</td>
+								</tr>
+								<tr>
+									<td class="cel-inferior-rs">mudança750</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-4">
+					<a href="#">
+						<div class="cel-celula-rs">
+							<table>
+								<tr>
+									<td class="cel-superior-rs">Google+</td>
+								</tr>
+								<tr>
+									<td class="cel-medio-rs">
+										<img src="imagens/google+.png">
+									</td>
+								</tr>
+								<tr>
+									<td class="cel-inferior-rs">mudança750</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top:40px; padding-bottom:50px">
+
+				<div class="col-xs-4">
+					<a href="#">
+						<div class="cel-celula-rs">
+							<table>
+								<tr>
+									<td class="cel-superior-rs">Youtube<td>
+								</tr>
+								<tr>
+									<td class="cel-medio-rs">
+										<img src="imagens/youtube.png">
+									</td>
+								</tr>
+								<tr>
+									<td class="cel-inferior-rs">mudança750</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-4">
+					<a href="#">
+						<div class="cel-celula-rs">
+							<table>
+								<tr>
+									<td class="cel-superior-rs">Instagram<td>
+								</tr>
+								<tr>
+									<td class="cel-medio-rs">
+										<img src="imagens/instagram.png">
+									</td>
+								</tr>
+								<tr>
+									<td class="cel-inferior-rs">mudança750</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-xs-4">
+					<a href="#" data-toggle="modal" data-target="#contato">
+						<div class="cel-celula-rs">
+							<table>
+								<tr>
+									<td class="cel-superior-rs">Whatsapp</td>
+								</tr>
+								<tr>
+									<td class="cel-medio-rs">
+										<img src="imagens/whatsapp.png">
+									</td>
+								</tr>
+								<tr>
+									<td class="cel-inferior-rs">(81) 99156-5667</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row" style="padding:20px 0px 20px 0px">
+				<div class="col-sm-4 hidden-xs div-campanha-rodape">
+					<img src="imagens/rodape1.png" class="campanha-rodape" class="img-responsive">
+				</div>
+
+				<div class="col-sm-4 declaracao">
+					<h5>Desenvolvido de <img src="imagens/coracaodeclaracao.png" width=20px> para a campanha da Mudança</h5>
+					<h6>
+						<a target="_blank" href="http://aeginformatica.github.io">AEG © Copyright 2017</a>
+					</h6>
+				</div>
+
+				<div class="col-sm-4 hidden-xs redes-sociais-index" >
+					<h5>Conheça-nos</h5>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href=""><img src="imagens/facebook.png"></a></li>
+						<li><a href=""><img src="imagens/twitter.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+</body>
+<script src='js/scrollReveal.js'></script>
+<script>
+
+		window.scrollReveal = new scrollReveal();
+
+</script>
+</html>
